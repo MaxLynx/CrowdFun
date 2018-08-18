@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "edu.crowdFun.model.User" table = "user">
+
+        <id name = "ID" type = "int" column = "id">
+            <generator class="native"/>
+        </id>
+
+        <property name = "nickname" column = "nickname" type = "string"/>
+        <property name = "firstName" column = "first_name" type = "string"/>
+        <property name = "lastName" column = "last_name" type = "string"/>
+        <property name = "description" column = "description" type = "string"/>
+        <property name = "birthday" column = "birthday" type = "date"/>
+        <property name = "password" column = "password" type = "string"/>
+        <property name = "imgUrl" column = "img_url" type = "string"/>
+        <property name = "joinDate" column = "join_date" type = "date"/>
+    </class>
+</hibernate-mapping>
